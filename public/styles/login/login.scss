@@ -1,0 +1,216 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(../../images/loginF/b9c8f893c9a782033a01f47e0c0b1d6e.jpg);
+    font-family: "PT Serif", serif;
+    font-weight: 400;
+}
+
+.notification{
+    background: #12b712;
+    color: #fffdfd;
+    position: absolute;
+    width: 50%;
+    z-index: 4;
+    top: 50%;
+}
+
+.login {
+    background-color: white;
+    /* position: relative; */
+    display: flex;
+    margin: 8em;
+    height: 60vh;
+    padding: 2em;
+    filter: drop-shadow(2px 3px 6px black);
+    box-sizing: content-box;
+}
+
+.page1 {
+    width: 50%;
+}
+
+.imdiv {
+    display: flex;
+    justify-content: center;
+}
+
+.imdiv > img {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.i1 {
+    display: flex;
+    margin: 2em 2em 0em 0em;
+    border: none;
+    border-bottom: 1px solid violet;
+    width: 60%;
+    padding: 0.6em;
+}
+
+.l1 {
+    font-size: xx-large;
+    font-weight: 600;
+}
+
+.l2 {
+    font-weight: 100;
+    opacity: 0.7;
+    margin-bottom: 3em;
+}
+
+.newUser {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 4em;
+}
+
+.s1 {
+    color: blue;
+    cursor: pointer;
+}
+
+.lbtn {
+    /* width: 11vw;     */
+    padding: 0.7em 2em;
+    border: none;
+    background: linear-gradient(45deg, blueviolet, firebrick);
+    color: white;
+    border-radius: 1.1em;
+    font-weight: bold;
+    outline: none;
+    cursor: pointer;
+}
+
+.lbtn:hover {
+    background: linear-gradient(200deg, blueviolet, firebrick);
+}
+
+.lform {
+    display: flex;
+    flex-direction: column;
+}
+
+.fPass {
+    color: blue;
+    cursor: pointer;
+}
+
+.logAndforg {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1.5em;
+    width: 65%;
+}
+
+.ni1 {
+    border: none;
+    outline: none;
+    margin-bottom: 0%;
+    margin-left: 0.8em;
+    padding: 0%;
+    width: 100%;
+}
+
+@media all and (max-width: 900px) {
+    body {
+        display: grid;
+        /* place-items: center; */
+    }
+
+    .login {
+        height: auto;
+        // flex-direction: column;
+        margin: 2em;
+        align-items: center;
+    }
+    .l1 {
+        font-size: medium;
+    }
+    .l2 {
+        font-size: smaller;
+        margin-bottom: 1em;
+    }
+    .page1 {
+        width: 100%;
+    }
+    .lform {
+        /*  justify-content: center; */
+        align-items: center;
+    }
+
+    .imdiv > img {
+        max-height: 80%;
+        max-width: 90%;
+    }
+
+    .newUser {
+        margin-bottom: 2em;
+        display: grid;
+        place-content: center;
+    }
+    .i1 {
+        margin-top: 1em;
+    }
+    .i1,
+    .logAndforg {
+        margin-right: 1em;
+        width: 80%;
+    }
+    .logAndforg {
+        width: 90%;
+    }
+
+    .lbtn,
+    .fPass {
+        font-size: x-small;
+    }
+}
+
+@media all and (max-width: 590px) {
+    .imdiv{
+        display: none;
+    }
+}
+
+@media all and (max-width: 350px) {
+    .page1 {
+        // width: 80vh;
+        height: 42vh;
+    }
+    // .imdiv{
+    //         display: none;
+    //     }
+    .login {
+        margin: 1em;
+    }
+    
+        .i1,
+    .logAndforg {
+        margin-right: 1em;
+        width: 80%;
+    }
+    .logAndforg {
+        width: 90%;
+    }
+}
+
+@media all and (max-width: 250px) {
+    .page1 {
+        height: 80vh;
+    }
+
+    .i1 {
+        width: 90%;
+    }
+
+    .logAndforg {
+        width: 99%;
+    }
+}

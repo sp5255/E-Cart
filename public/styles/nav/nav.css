@@ -1,0 +1,75 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-weight: 400;
+}
+
+nav {
+  background: #5803ff;
+  position: -webkit-sticky;
+  position: sticky;
+  font-size: 1.6rem;
+  color: white;
+  width: 100vw;
+  z-index: 3;
+  top: 0em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.5rem 3rem;
+  -webkit-filter: drop-shadow(-1px -2px 11px black);
+          filter: drop-shadow(-1px -2px 11px black);
+}
+
+.nav--l,
+.nav--r {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav--l div,
+.nav--r div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 2.3rem;
+  margin-left: 0.5rem;
+}
+
+.nav--l svg:hover,
+.nav--r svg:hover {
+  cursor: pointer;
+}
+
+#nav__h {
+  cursor: pointer;
+}
+
+@media all and (max-width: 560px) {
+  nav {
+    padding: 0.5rem;
+    font-size: medium;
+  }
+}
+/*# sourceMappingURL=nav.css.map */

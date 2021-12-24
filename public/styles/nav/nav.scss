@@ -1,0 +1,51 @@
+@mixin displayCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-weight: 400;
+}
+
+nav {
+    // background: #200356;
+    background: #5803ff;
+    position: sticky;
+    font-size: 1.6rem;
+    color: white;
+    width: 100vw;
+    z-index: 3;
+    top: 0em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 3rem;
+    filter: drop-shadow(-1px -2px 11px black);
+}
+
+.nav--l,
+.nav--r {
+    @include displayCenter();
+    div {
+        @include displayCenter();
+        height: 2.3rem;
+        margin-left: 0.5rem;
+    }
+    svg:hover{
+        cursor: pointer;
+    }
+}
+#nav__h{
+    cursor: pointer;
+}
+
+
+@media all and (max-width:560px) {
+    nav{
+        padding: 0.5rem;   
+        font-size: medium;
+    }        
+}

@@ -1,0 +1,178 @@
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+body {
+  font-family: "PT Serif", serif;
+  font-weight: 400;
+}
+
+.notification {
+  background: #12b712;
+  color: #fffdfd;
+  position: absolute;
+  width: 50%;
+  z-index: 4;
+  top: 50%;
+}
+
+.container {
+  background: url(../../images/loginF/b9c8f893c9a782033a01f47e0c0b1d6e.jpg);
+  height: 100vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.f1 {
+  background: white;
+  height: 30em;
+  width: 80vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-filter: drop-shadow(1px 2px 5px black);
+          filter: drop-shadow(1px 2px 5px black);
+}
+
+.imDiv, .f2 {
+  width: 50%;
+}
+
+.imDiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-filter: drop-shadow(1px 2px 5px black);
+          filter: drop-shadow(1px 2px 5px black);
+}
+
+.img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.th1 {
+  font-size: 2em;
+  margin: 3vh 0vh;
+}
+
+.f2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.back {
+  /* border: 2px solid; */
+  /* align-content: flex-start; */
+  width: 70%;
+  margin-top: 2em;
+}
+
+.signForm {
+  width: 70%;
+}
+
+.fa {
+  font-size: 1em;
+}
+
+.fa-mobile {
+  font-size: 1.5em;
+  margin-right: 0.1em;
+}
+
+.i1 {
+  background: white;
+  border-bottom: 2px solid turquoise;
+  /* border-radius: 0.5em; */
+  padding: 0.2em;
+  padding-left: 0.4em;
+  margin-top: 0.7em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.i2 {
+  border: none;
+  outline: none;
+  width: 100%;
+  padding: 0.5em;
+}
+
+.signBtn {
+  background: linear-gradient(45deg, blueviolet, red);
+  color: white;
+  border: none;
+  outline: none;
+  border-radius: 0.5rem;
+  width: 100%;
+  margin-top: 2em;
+  padding: 0.4rem;
+  font-size: 1rem;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.signBtn:hover {
+  background: linear-gradient(259deg, blueviolet, red);
+}
+
+@media all and (max-width: 750px) {
+  .f1 {
+    /* flex-direction: column; */
+    height: 29em;
+    width: 70vw;
+  }
+  .f2 {
+    width: 100%;
+  }
+  .imDiv {
+    display: none;
+  }
+  .th1 {
+    font-size: x-large;
+  }
+  .signBtn {
+    font-size: small;
+  }
+}
+
+@media all and (max-width: 250px) {
+  .container {
+    height: 150vh;
+  }
+  .f1 {
+    height: 25em;
+  }
+}
+/*# sourceMappingURL=signup.css.map */

@@ -1,0 +1,144 @@
+* {
+  margin: 0%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: #fdfdfd;
+  font-family: "PT Serif", serif;
+  font-weight: 400;
+}
+
+.carousel {
+  margin-top: 0.3rem;
+}
+
+.w-100 {
+  height: 60vh;
+}
+
+.p-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  row-gap: 2rem;
+  padding: 9rem;
+  position: relative;
+}
+
+.product-card {
+  max-width: 90%;
+  max-height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.product-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #ffffff;
+  height: 100%;
+  padding: 4rem 1rem;
+  border-radius: 10px;
+  -webkit-box-shadow: 10px 10px 7px #b3b3b3, -10px -10px 7px #ffffff;
+          box-shadow: 10px 10px 7px #b3b3b3, -10px -10px 7px #ffffff;
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
+}
+
+.product-img img {
+  max-width: 90%;
+  max-height: 100%;
+}
+
+.product-img .desc-btn {
+  visibility: hidden;
+  position: absolute;
+  color: #0000ff;
+  background: white;
+  font-weight: 600;
+  font-size: medium;
+}
+
+.p-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 1em;
+}
+
+.product-img:hover {
+  border-bottom: 4px solid black;
+}
+
+.product-img:hover img {
+  -webkit-filter: opacity(0.5);
+          filter: opacity(0.5);
+  -webkit-filter: blur(3px);
+          filter: blur(3px);
+}
+
+.product-img:hover .desc-btn {
+  visibility: visible;
+  border: none;
+  outline: none;
+  border-radius: 0.4rem;
+  padding: 0.2rem 3rem;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.product-img:hover .desc-btn:hover {
+  background: #5b07f7;
+  color: white;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.prod-desc {
+  visibility: hidden;
+  position: absolute;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100px;
+  /* Need a specific value to work */
+  background: red;
+  -webkit-transition: all 2s;
+  transition: all 2s;
+}
+
+@media all and (max-width: 560px) {
+  .p-container {
+    padding: 4rem 0em 4rem 2rem;
+  }
+  .w-100 {
+    height: 30vh;
+  }
+}
+/*# sourceMappingURL=style.css.map */
